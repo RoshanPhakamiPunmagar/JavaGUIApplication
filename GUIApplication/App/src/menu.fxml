@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openDashboard" text="Dashboard" />
+                  <MenuItem mnemonicParsing="false" onAction="#save" text="Save records" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Create">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#open1" text="Property record (land)" />
+                  <MenuItem mnemonicParsing="false" onAction="#open2" text="Property record (land &amp; house)" />
+                  <MenuItem mnemonicParsing="false" onAction="#open3" text="Seller record" />
+                  <MenuItem mnemonicParsing="false" onAction="#open4" text="Buyer record" />
+                  <MenuItem mnemonicParsing="false" onAction="#open5" text="Sale record" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Search">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#open6" text="Sale records" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <BorderPane fx:id="bp" layoutY="25.0" prefHeight="376.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <fx:include source="dashboard.fxml"/>
+      </BorderPane>
+   </children>
+</AnchorPane>
